@@ -1,8 +1,4 @@
-#include <glad/glad.h>
-#include <fstream>
-#include <sstream>
-#include <string>
-#include <iostream>
+#include <graphics/shader.hpp>
 
 char* read_shader_source(std::string file_name) {
     std::ostringstream oss;
@@ -55,15 +51,6 @@ unsigned int create_shader(char* source, GLenum flag) {
         return -1;
     }  
 }
-
-class Shader
-{
-private:
-    unsigned int ID;
-public:
-    Shader(std::string, std::string);
-    void use();
-};
 
 Shader::Shader(std::string vertexShaderFile, std::string fragmentShaderFile)
 {

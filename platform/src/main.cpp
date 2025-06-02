@@ -2,7 +2,7 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-#include <graphics/shader_utils.hpp>
+#include <graphics/shader.hpp>
 #include <graphics/mesh.hpp>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
