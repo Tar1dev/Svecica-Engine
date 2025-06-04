@@ -17,9 +17,12 @@ private:
     unsigned int VBO, VAO, EBO;
     std::vector<float> vertices;
     std::vector<unsigned int> indices;
+    unsigned int *textureID;
 public:
     Mesh(const float *verticesData, size_t verticesCount, const unsigned int *indicesData, size_t indicesCount);
     void draw();
+    void cleanup();
+    void setTextureID(unsigned int* ID);
 };
 
 #endif // MESH_HPP
